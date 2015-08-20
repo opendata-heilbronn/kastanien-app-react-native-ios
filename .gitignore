@@ -1,0 +1,9 @@
+xcuserdata
+xcshareddata
+.DS_Store
+profile
+Pods
+Podfile.lock
+*.xcworkspace
+**/*.xccheckout
+node_modules
