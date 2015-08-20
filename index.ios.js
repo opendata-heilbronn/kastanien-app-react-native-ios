@@ -37,7 +37,7 @@ var MapViewExample = React.createClass({
     },
 
     didGetPosition(latitude, longitude) {
-        fetch('http://api.grundid.de/tree/near?latitude=' + latitude + '&longitude=' + longitude+'&treeType=CASTANEA')
+        fetch('http://api.grundid.de/tree/near?latitude=' + latitude + '&longitude=' + longitude+'&treeType=CASTANEA&size=500')
             .then((response) => response.json())
             .then((featurecollection) => {
                 var annotations = featurecollection.features.map((feature) => {
